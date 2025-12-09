@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>VFX Designer Portfolio</title>
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600&family=Playfair+Display:ital,wght@0,400;0,700;1,400&family=Syncopate:wght@400;700&display=swap"
+        rel="stylesheet">
+
+    <!-- Styles -->
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <!-- Background Canvas -->
+    <canvas id="bg-canvas"></canvas>
+
+    <!-- Navigation (Minimal) -->
+    <nav>
+        <div class="logo">VFX.</div>
+        <div class="menu-btn">MENU</div>
+    </nav>
+
+    <main>
+        <!-- Hero Section -->
+        <section id="hero">
+            <div class="hero-content">
+                <h1 class="glitch-text" data-text="SEOLIN">SEOLIN</h1>
+                <h2 class="subtitle">DESIGNER & INTERACTIVE CREATOR</h2>
+                <p class="intro-text">I Create Motion That Tells Stories.</p>
+            </div>
+            <div class="scroll-indicator">
+                <span>SCROLL</span>
+                <div class="line"></div>
+            </div>
+        </section>
+
+        <!-- About Section -->
+        <section id="about">
+            <div class="container">
+                <div class="about-grid">
+                    <div class="about-img">
+                        <div class="placeholder-img"></div>
+                    </div>
+                    <div class="about-text">
+                        <h3>IDENTITY</h3>
+                        <p class="reveal-text">Motion as Language.</p>
+                        <p class="reveal-text">Interaction as Experience.</p>
+                        <p class="reveal-text">Details People Feel, Not See.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Works Section -->
+        <section id="works">
+            <div class="works-track">
+                <!-- Work 01: ART3D -->
+                <div class="work-item">
+                    <div class="work-media">
+                        <div class="media-placeholder"
+                            style="background: transparent; border: none; position: relative; overflow: hidden;">
+                            <img src="assets/art3d_md_list.png" alt="ART3D"
+                                style="width: 100%; height: 100%; object-fit: cover; opacity: 0.8; transition: transform 0.5s;">
+                            <div class="open-overlay">OPEN PROJECT</div>
+                        </div>
+                    </div>
+                    <div class="work-info">
+                        <h4>001</h4>
+                        <h3>ART3D</h3>
+                        <p>3D Motion Project</p>
+                    </div>
+                </div>
+                <!-- Work 02: Chainsaw Poster -->
+                <div class="work-item">
+                    <div class="work-media">
+                        <div class="media-placeholder"
+                            style="background: transparent; border: none; position: relative; overflow: hidden;">
+                            <img src="assets/KakaoTalk_20251202_114530490.jpg" alt="Chainsaw Poster"
+                                style="width: 100%; height: 100%; object-fit: cover; opacity: 0.8; transition: transform 0.5s;">
+                            <div class="open-overlay">OPEN PROJECT</div>
+                        </div>
+                    </div>
+                    <div class="work-info">
+                        <h4>002</h4>
+                        <h3>Chainsaw Poster</h3>
+                        <p>Graphic Design</p>
+                    </div>
+                </div>
+                <!-- Work 03 -->
+                <div class="work-item">
+                    <div class="work-media">
+                        <div class="media-placeholder" data-color="#FFFFFF"></div>
+                    </div>
+                    <div class="work-info">
+                        <h4>003</h4>
+                        <h3>Dynamic Grid</h3>
+                        <p>Brand Visual System</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Process Section -->
+        <section id="process">
+            <div class="process-container">
+                <div class="process-visual">
+                    <!-- Dynamic Visual Here -->
+                </div>
+                <div class="process-steps">
+                    <div class="step" data-step="1">01. Idea</div>
+                    <div class="step" data-step="2">02. Sketch</div>
+                    <div class="step" data-step="3">03. Asset</div>
+                    <div class="step" data-step="4">04. Composition</div>
+                    <div class="step" data-step="5">05. Render</div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Tech Stack -->
+        <section id="tech">
+            <h3>TECHNOLOGIES</h3>
+            <div class="tech-grid">
+                <!-- Tech Item 1 -->
+                <div class="tech-card-container">
+                    <div class="tech-card">
+                        <div class="tech-front">After Effects</div>
+                        <div class="tech-back">Motion Graphics & VFX</div>
+                    </div>
+                </div>
+                <!-- Tech Item 2 -->
+                <div class="tech-card-container">
+                    <div class="tech-card">
+                        <div class="tech-front">Cinema 4D</div>
+                        <div class="tech-back">3D Modeling & Sim</div>
+                    </div>
+                </div>
+                <!-- Tech Item 3 -->
+                <div class="tech-card-container">
+                    <div class="tech-card">
+                        <div class="tech-front">Three.js</div>
+                        <div class="tech-back">WebGL Experiences</div>
+                    </div>
+                </div>
+                <!-- Tech Item 4 -->
+                <div class="tech-card-container">
+                    <div class="tech-card">
+                        <div class="tech-front">Unreal Engine</div>
+                        <div class="tech-back">Real-time Rendering</div>
+                    </div>
+                </div>
+                <!-- Tech Item 5 -->
+                <div class="tech-card-container">
+                    <div class="tech-card">
+                        <div class="tech-front">Figma</div>
+                        <div class="tech-back">UI/UX Design</div>
+                    </div>
+                </div>
+                <!-- Tech Item 6 -->
+                <div class="tech-card-container">
+                    <div class="tech-card">
+                        <div class="tech-front">Blender</div>
+                        <div class="tech-back">3D Assets</div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Footer -->
+        <footer>
+            <div class="footer-content">
+                <h2>Let's build something<br>visually unforgettable.</h2>
+                <div class="contact-links">
+                    <a href="#" class="magnetic-btn">EMAIL</a>
+                    <a href="#" class="magnetic-btn">BEHANCE</a>
+                    <a href="https://www.instagram.com/sseo__lin/?hl=ko" target="_blank"
+                        class="magnetic-btn">INSTAGRAM</a>
+                </div>
+            </div>
+        </footer>
+    </main>
+
+    <!-- Image Modal -->
+    <div id="image-modal" class="modal">
+        <span class="close-modal">&times;</span>
+        <img class="modal-content" id="modal-img">
+        <div id="caption"></div>
+    </div>
+
+    <!-- Scripts -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
+    <script src="js/background.js"></script>
+    <script src="js/main.js"></script>
+</body>
+
+</html>
