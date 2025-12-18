@@ -229,43 +229,7 @@ modal.onclick = function (e) {
     }
 }
 
-// Tech Card Flip
-const techCards = document.querySelectorAll('.tech-card');
 
-techCards.forEach(card => {
-    card.addEventListener('click', () => {
-        card.classList.toggle('flipped');
-    });
-
-    // Magnetic effect for tech cards
-    const container = card.parentElement;
-    container.addEventListener('mousemove', (e) => {
-        const rect = container.getBoundingClientRect();
-        const x = e.clientX - rect.left - rect.width / 2;
-        const y = e.clientY - rect.top - rect.height / 2;
-
-        gsap.to(card, {
-            duration: 0.3,
-            x: x * 0.2,
-            y: y * 0.2,
-            rotationX: -y * 0.1, // Tilt effect
-            rotationY: x * 0.1,
-            ease: "power2.out"
-        });
-    });
-
-    container.addEventListener('mouseleave', () => {
-        gsap.to(card, {
-            duration: 0.5,
-            x: 0,
-            y: 0,
-            rotationX: 0,
-            rotationY: 0, // Reset tilt but keep flip state if clicked
-            ease: "elastic.out(1, 0.3)"
-        });
-        // Note: We don't reset the 'flipped' class here so user can read the back
-    });
-});
 const interactiveElements = document.querySelectorAll('a, button, .step, .work-item');
 interactiveElements.forEach(el => {
     el.addEventListener('mouseenter', () => cursor.classList.add('hovered'));
