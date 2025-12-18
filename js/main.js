@@ -170,6 +170,7 @@ steps.forEach(step => {
                     img.style.maxHeight = '80%';
                     img.style.objectFit = 'contain';
                     img.style.boxShadow = '0 0 30px rgba(0,0,0,0.5)';
+                    processVisual.appendChild(img);
                 } else if (stepNum === '3') {
                     const img = document.createElement('img');
                     img.src = 'assets/develop_sketch_new.png';
