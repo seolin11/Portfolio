@@ -144,12 +144,28 @@ steps.forEach(step => {
 
         // Update visual (Simulated)
         const stepNum = step.getAttribute('data-step');
+
         // Animate change
         gsap.to(processVisual, {
             opacity: 0,
             duration: 0.2,
             onComplete: () => {
-                processVisual.textContent = `STEP 0${stepNum}`;
+                // Clear content
+                processVisual.innerHTML = '';
+
+                // Specific content for steps
+                if (stepNum === '2') {
+                    const img = document.createElement('img');
+                    img.src = 'assets/sketch_latest.png';
+                    img.style.maxWidth = '80%';
+                    img.style.maxHeight = '80%';
+                    img.style.objectFit = 'contain';
+                    img.style.boxShadow = '0 0 30px rgba(0,0,0,0.5)'; // Add some depth
+                    processVisual.appendChild(img);
+                } else {
+                    processVisual.textContent = `STEP 0${stepNum}`;
+                }
+
                 gsap.to(processVisual, {
                     opacity: 1,
                     duration: 0.2
