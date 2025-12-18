@@ -176,6 +176,13 @@ steps.forEach(step => {
                     img.style.maxHeight = '80%';
                     img.style.objectFit = 'contain';
                     img.style.boxShadow = '0 0 30px rgba(0,0,0,0.5)';
+                } else if (stepNum === '4') {
+                    const img = document.createElement('img');
+                    img.src = 'assets/final_sketch.png';
+                    img.style.maxWidth = '80%';
+                    img.style.maxHeight = '80%';
+                    img.style.objectFit = 'contain';
+                    img.style.boxShadow = '0 0 30px rgba(0,0,0,0.5)';
                     processVisual.appendChild(img);
                 } else {
                     processVisual.textContent = `STEP 0${stepNum}`;
