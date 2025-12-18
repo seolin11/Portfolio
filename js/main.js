@@ -164,7 +164,7 @@ steps.forEach(step => {
                     processVisual.appendChild(img);
                 } else if (stepNum === '1') {
                     const img = document.createElement('img');
-                    img.src = 'assets/idea_new.png';
+                    img.src = 'assets/idea_final_v2.png';
                     img.style.maxWidth = '80%';
                     img.style.maxHeight = '80%';
                     img.style.objectFit = 'contain';
